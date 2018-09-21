@@ -1,0 +1,57 @@
+package com.example.pc.myapplication.Model;
+
+public class TopicChoice {
+    private char id;
+    private String choice;
+    private boolean typeChoice;
+    private int questionID;
+
+    public TopicChoice(char id, String choice, boolean typeChoice, int questionID){
+        this.id = id;
+        this.choice = choice;
+        this.typeChoice = typeChoice;
+        this.questionID = questionID;
+    }
+
+    public char getId() {
+        return id;
+    }
+
+    public void setId(char id) {
+        this.id = id;
+    }
+
+    public String getChoice() {
+        return choice;
+    }
+
+    public void setChoice(String choice) {
+        this.choice = choice;
+    }
+
+    public boolean getTypeChoice() {
+        return typeChoice;
+    }
+
+    public void setTypeChoice(boolean typeChoice) {
+        this.typeChoice = typeChoice;
+    }
+
+    public int getQuestionID() {
+        return questionID;
+    }
+
+    public void setQuestionID(int questionID) {
+        this.questionID = questionID;
+    }
+
+    @Override
+    public String toString() {
+        return "TopicChoice{" +
+                "id=" + id +
+                ", choice='" + choice + '\'' +
+                ", typeChoice=" + typeChoice +
+                ", questionID=" + questionID +
+                '}';
+    }
+}
